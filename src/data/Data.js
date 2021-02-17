@@ -1,7 +1,7 @@
 export const Services = [
     {
         ServiceId: 1,
-        ServiceName: "Men Haircutt",
+        ServiceName: "Men Haircut",
         ServiceTime: 30,
         ServicePrice: 30,
         ServiceImg:
