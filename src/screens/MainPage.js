@@ -25,6 +25,7 @@ import {
 import LottieView from "lottie-react-native";
 import { SCLAlert, SCLAlertButton } from "react-native-scl-alert";
 import Calandar from "./Calander";
+import Cal from "./calender";
 
 export default class MainPage extends React.Component {
     state = {
@@ -146,7 +147,7 @@ export default class MainPage extends React.Component {
                             <Text>Book a Date</Text>
                         </View>
                         <Text></Text>
-                        <Calandar />
+                        <Cal/>
                     </ProgressStep>
                 </ProgressSteps>
             </View>
