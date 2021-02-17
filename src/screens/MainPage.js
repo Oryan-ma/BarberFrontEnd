@@ -24,6 +24,7 @@ import {
 //import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import LottieView from "lottie-react-native";
 import { SCLAlert, SCLAlertButton } from "react-native-scl-alert";
+import Calandar from "./Calander";
 
 export default class MainPage extends React.Component {
     state = {
@@ -145,38 +146,7 @@ export default class MainPage extends React.Component {
                             <Text>Book a Date</Text>
                         </View>
                         <Text></Text>
-                        <Calendar
-                            markedDates={this.state._markedDates}
-                            onDayPress={this.onDaySelect}
-                            hideArrows={false}
-                            markedDates={{
-                                selected: true,
-                            }}
-                            style={[
-                                styles.calendar,
-                                { height: 350, flex: 1, arrowColor: "orange" },
-                            ]}
-                            dayComponent={({ date, state }) => {
-                                return (
-                                    <View>
-                                        <Text
-                                            style={{
-                                                textMonthFontWeight: "bold",
-                                                arrowColor: "orange",
-                                                textDayFontSize: 26,
-                                                textAlign: "center",
-                                                color:
-                                                    state === "enable"
-                                                        ? "gray"
-                                                        : "black",
-                                            }}
-                                        >
-                                            {date.day}
-                                        </Text>
-                                    </View>
-                                );
-                            }}
-                        />
+                        <Calandar />
                     </ProgressStep>
                 </ProgressSteps>
             </View>
