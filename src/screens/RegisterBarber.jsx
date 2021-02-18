@@ -22,6 +22,7 @@ export default class RegisterBarber extends React.Component {
                     }}
                 >
                     Save the world
+                
                 </Text>
 
                 <Text

@@ -119,7 +119,7 @@ export default class Register extends React.Component {
 
                 <View
                     style={{
-                        marginHorizontal: 55,
+                        marginHorizontal: 55, 
                         alignItems: 'center',
                         justifyContent: 'center',
                         marginTop: 30,
