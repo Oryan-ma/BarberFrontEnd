@@ -7,7 +7,6 @@ import Login from "../screens/Login";
 import Register from "../screens/Register";
 import MainPage from "../screens/MainPage";
 import RegisterBarber from "../screens/RegisterBarber";
-
 const stackNavigatorOptions = {
     headerShown: false,
 };

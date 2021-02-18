@@ -1,13 +1,13 @@
 /* eslint-disable eslint-comments/no-unused-disable */
 /* eslint-disable react-native/no-inline-styles */
-import React from "react";
-import { Text, View, Image, TextInput } from "react-native";
-import Icon from "@expo/vector-icons/AntDesign";
+import React from 'react';
+import {Text, View, Image, TextInput} from 'react-native';
+
 
 export default class RegisterBarber extends React.Component {
     render() {
-        const { navigate } = this.props.navigation;
-        return (
+        const {navigate} = this.props.navigation;
+                return (
             <View style={{ backgroundColor: "#FFF", height: "100%" }}>
                 <Image
                     source={require("../images/image.jpg")}
@@ -52,7 +52,7 @@ export default class RegisterBarber extends React.Component {
                     }}
                 >
                     <TextInput
-                        placeholder="Email"
+                        placeholder="Email" 
                         placeholderTextColor="#00716F"
                         style={{ paddingHorizontal: 10 }}
                     />

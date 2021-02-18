@@ -6,6 +6,8 @@ import Icon from '@expo/vector-icons/AntDesign';
 
 export default class Register extends React.Component {
     render() {
+        const {navigate} = this.props.navigation;
+
         return (
             <View style={{backgroundColor: '#FFF', height: '100%'}}>
                 <Image
@@ -20,6 +22,7 @@ export default class Register extends React.Component {
                         alignSelf: 'center',
                     }}>
                     Save the world
+                
                 </Text>
 
                 <Text
@@ -125,6 +128,7 @@ export default class Register extends React.Component {
                         borderRadius: 23,
                     }}>
                     <Text
+                    onPress={() => navigate('RegisterBarber')}
                         style={{
                             color: 'white',
                             
