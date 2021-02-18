@@ -110,6 +110,29 @@ export default class Register extends React.Component {
                         }}>
                         Register
                     </Text>
+
+
+                </View>
+
+                <View
+                    style={{
+                        marginHorizontal: 55,
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        marginTop: 30,
+                        backgroundColor: '#00716F',
+                        paddingVertical: 10,
+                        borderRadius: 23,
+                    }}>
+                    <Text
+                        style={{
+                            color: 'white',
+                            
+                        }}>
+                        Register for barbaer
+                    </Text>
+
+                    
                 </View>
             </View>
         );
