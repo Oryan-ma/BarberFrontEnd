@@ -76,7 +76,7 @@ export default class Login extends React.Component {
                         borderRadius: 23,
                     }}>
                     <Text
-                         onPress={() => navigate('MainPage')}
+                         onPress={() => navigate('UserHome')}
                     style={{
                         alignSelf: 'center',
                         //color: '#00716F',

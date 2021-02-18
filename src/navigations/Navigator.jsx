@@ -7,6 +7,8 @@ import Login from "../screens/Login";
 import Register from "../screens/Register";
 import MainPage from "../screens/MainPage";
 import RegisterBarber from "../screens/RegisterBarber";
+import UserApp from "../screens/UserAppointments";
+import UserHome from "../screens/UserHome";
 const stackNavigatorOptions = {
     headerShown: false,
 };
@@ -16,6 +18,8 @@ const AppNavigator = createStackNavigator(
         Register: { screen: Register },
         MainPage: { screen: MainPage },
         RegisterBarber: { screen: RegisterBarber },
+        UserHome: { screen: UserHome },
+        UserApp: { screen: UserApp },
     },
     {
         defaultNavigationOptions: stackNavigatorOptions,
