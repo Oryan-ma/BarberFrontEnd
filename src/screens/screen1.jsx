@@ -1,13 +1,15 @@
-import React from "react";
+import React, { Component } from 'react';
 import {
-    Text,
+  Platform,
+  StyleSheet,
+  Text,
     View,
     Image,
     TextInput,
     FlatList,
     TouchableOpacity,
-    StyleSheet,
-} from "react-native";
+    
+} from 'react-native';
 import { ProgressSteps, ProgressStep } from "react-native-progress-steps";
 import Icon from "@expo/vector-icons/AntDesign";
 import { Services, Employees } from "../data/Data";
@@ -26,16 +28,30 @@ import EmployeesList from "./Employee";
 import Cal from "./calender";
 import { SCLAlert, SCLAlertButton } from "react-native-scl-alert";
 
-export default function UserHome({ route, navigation }) {
-    //const { user } = route.params;
-const torim = navigation.params.queue;
-console.log("torim: ", torim);
+export default class Screen1 extends Component<{}> {
+  static navigationOptions = {
+    title: 'First Screen',
+  };
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      prevScreentor: this.props.navigation.state.params.queue
+      
+    };
+    console.log("keynan",this.state.prevScreentor[1].Barber_Email);
+    //alert(this.state.prevScreentor[1].Barber_Email)
+  }
+  
+
+  render() {
     return (
-        <View style={styles.container}>
-        <View style={{ backgroundColor: "#FFF", height: "80%" }}>
+         <View style={styles.container}>
+              <View style={{ backgroundColor: "#FFF", height: "100%" }}>
             <Image
                 source={require("../images/image.jpg")}
-                style={{ width: "100%", height: "18%" }}
+                style={{ width: "100%", height: "30%" }}
             />
 
             <Card>
@@ -76,13 +92,14 @@ console.log("torim: ", torim);
         </View>
          </View>
     );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    //alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
 });

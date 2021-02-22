@@ -66,7 +66,7 @@ export default function Login({ navigation }) {
     const succsesQueue = (queue) => {
         console.log("queue: ");
         console.log("queue: ", queue);
-        navigation.navigate("UserHome", { user: { name: "123" }, queue: queue });
+        navigation.navigate("screen1", { user: { name: "123" }, queue: queue });
     }
     return (
         <View style={{ backgroundColor: "#FFF", height: "100%" }}>
@@ -113,6 +113,7 @@ export default function Login({ navigation }) {
                     style={{ paddingHorizontal: 10 }}
                     placeholder="Username"
                     onChangeText={(v) => setEmail(v)}
+                    text="Oryan"
                 />
             </View>
             <View
