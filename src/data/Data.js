@@ -15,6 +15,14 @@ export const Services = [
         ServiceImg:
             "https://pophaircuts.com/images/2018/10/cute-short-bob-haircut-for-female-new-haircut-ideas-for-short-hair-1.jpg",
     },
+    {
+        ServiceId: 3,
+        ServiceName: "Pen woman",
+        ServiceTime: 35,
+        ServicePrice: 100,
+        ServiceImg:
+            "https://images1.ynet.co.il/PicServer5/2018/06/21/8608697/1__shutterstock_253809937_6.jpg",
+    },
 ];
 
 export const Employees = [

@@ -1,0 +1,47 @@
+{
+    "project_info": {
+        "project_number": "132863423327",
+        "project_id": "barber-54019",
+        "storage_bucket": "barber-54019.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:132863423327:android:84343ed96c43e14305fcea",
+                "android_client_info": {
+                    "package_name": "com.bookmex"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "132863423327-932laed501bh5o1mu8ikc5muv3bu98h6.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.bookmex",
+                        "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+                    }
+                },
+                {
+                    "client_id": "132863423327-rvj881lq2er0kpafs0rdp6p62num0569.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyBXATRgxvc6kXoIxadZ37mjs3mBjVYyjnA"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "132863423327-rvj881lq2er0kpafs0rdp6p62num0569.apps.googleusercontent.com",
+                            "client_type": 3
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

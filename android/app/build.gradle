@@ -12,7 +12,7 @@ import com.android.build.OutputFile
  * `apply from: "../../node_modules/react-native/react.gradle"` line.
  *
  * project.ext.react = [
- *   // the name of the generated asset file containing your JS bundle
+ *   // the name of the generate d asset file containing your JS bundle
  *   bundleAssetName: "index.android.bundle",
  *
  *   // the entry file for bundle generation. If none specified and
@@ -216,4 +216,6 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
+
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply plugin: 'com.google.gms.google-services' 

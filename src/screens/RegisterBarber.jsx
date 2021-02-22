@@ -20,7 +20,7 @@ export default class RegisterBarber extends React.Component {
                         alignSelf: "center",
                     }}
                 >
-                    Save the worldsa 
+                    Register for Barber
                 </Text>
 
                 <Text
@@ -32,9 +32,7 @@ export default class RegisterBarber extends React.Component {
                         opacity: 0.4,
                     }}
                 >
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequat duis enim velit
-                    mollit.
+                    Here are register to barber of Haman's barber shop
                 </Text>
 
                 <View
@@ -92,7 +90,7 @@ export default class RegisterBarber extends React.Component {
                 >
                     <TextInput
                         secureTextEntry
-                        placeholder="City"
+                        placeholder="Confirm Password"
                         placeholderTextColor="#00716F"
                         style={{ paddingHorizontal: 10 }}
                     />
@@ -112,7 +110,7 @@ export default class RegisterBarber extends React.Component {
                 >
                     <TextInput
                         secureTextEntry
-                        placeholder="Confirm Password"
+                        placeholder="City"
                         placeholderTextColor="#00716F"
                         style={{ paddingHorizontal: 10 }}
                     />
@@ -134,7 +132,7 @@ export default class RegisterBarber extends React.Component {
                             color: "white",
                         }}
                     >
-                        Registerrrrr
+                        Register barber now !
                     </Text>
                 </View>
             </View>
