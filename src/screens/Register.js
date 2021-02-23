@@ -249,6 +249,6 @@ export default function Register(props) {
                     Register for barbaer
                     </Text>
             </View>
-        </View >
+        </View>
     );
 }

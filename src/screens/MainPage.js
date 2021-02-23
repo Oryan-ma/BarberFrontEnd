@@ -8,9 +8,9 @@ import {Services,Employees} from '../data/Data';
 import { Avatar, Button, Card, Title, Paragraph,Checkbox } from 'react-native-paper';
 //import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import LottieView from "lottie-react-native";
-import CCservices from './CCservices';
-import EmployeesList from './Employee';
-import Cal from "./calender";
+import CCservices from "../components/CCservices";
+import EmployeesList from "../components/Employee";
+import Cal from "../components/calender";
 import {
   SCLAlert,
   SCLAlertButton
@@ -28,7 +28,7 @@ var serviceId = null;
 
 getServices = (data)=>{
     this.serviceId=data;
-    alert(this.serviceId);
+    //alert(this.serviceId);
 
 }
   componentDidMount(){ 
