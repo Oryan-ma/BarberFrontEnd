@@ -24,10 +24,9 @@ import {
 import LottieView from "lottie-react-native";
 import { SCLAlert, SCLAlertButton } from "react-native-scl-alert";
 import UserAppointments from "./UserAppointments";
-var timelist = [];
 
 export default class UserHome extends Component<{}> {
-    
+
     static navigationOptions = {
         title: "First Screen",
     };
@@ -36,29 +35,15 @@ export default class UserHome extends Component<{}> {
         super(props);
 
         this.state = {
-            prevScreentor: this.props.navigation.state.params.queue,
-            
+
         };
-        console.log("keynan", this.state.prevScreentor[1]);
-        const timelist = [];
         //alert(this.state.prevScreentor[1].Barber_Email)
     }
-   
-     componentDidMount(){
-         
-for(let i = 0; i < this.state.prevScreentor.length; i++){
-     console.log("keynan", i);
-     timelist.push(this.state.prevScreentor[i].time);
-     
-}
 
-console.log(timelist[1]);
-
-  }
 
     render() {
         const { navigation } = this.props;
-        
+
         return (
             <View style={styles.container}>
                 <View>
@@ -75,7 +60,6 @@ console.log(timelist[1]);
                         My Appointments
                     </Text>
                 </View>
-          <Text>     {timelist[1]} </Text>
 
                 <View>
                     <Text

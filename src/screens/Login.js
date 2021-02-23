@@ -3,11 +3,12 @@ import { Text, View, Image, TextInput, StyleSheet } from "react-native";
 import Icon from "@expo/vector-icons/AntDesign";
 import { TouchableOpacity } from "react-native";
 import { useState } from "react";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Login({ navigation }) {
     const [Email, setEmail] = useState("");
     const [Password, setPassword] = useState("");
-    const [User, setUser] = useState("");
+    let User = {};
 
     const url = `http://proj.ruppin.ac.il/igroup26/test2/tar6/api/`;
 
@@ -30,18 +31,17 @@ export default function Login({ navigation }) {
             //referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
             body: JSON.stringify(user), // body data type must match "Content-Type" header
         })
-            .then((res) => res.json())
+            .then((res) => { return res.json() })
             .then((response) => succses(response))
             .catch((error) => {
                 console.log(error);
             });
     };
-    const succses = (user) => {
-        console.log("User: ", user);
-        if (user.Name !== "") {
-            setUser(user);
-            getAllQueue();
-        }
+    const succses = async (user) => {
+        console.log("succses user: ", user);
+        User = user;
+        //await setUser(user);
+        getAllQueue();
     };
     const getAllQueue = () => {
         fetch(url + `queue`, {
@@ -66,13 +66,28 @@ export default function Login({ navigation }) {
             });
     };
     const succsesQueue = (queue) => {
-        console.log("queue: ");
+        storeUser();
+        storeQueue(queue);
+        console.log("User: ", User);
         console.log("queue: ", queue);
-        navigation.navigate("UserHome", {
-            user: { name: "123" },
-            queue: queue,
-        });
+        navigation.navigate("UserHome");
     };
+
+    const storeUser = async () => {
+        try {
+            await AsyncStorage.setItem('@user', JSON.stringify(User))
+        } catch (e) {
+            // saving error
+        }
+    }
+    const storeQueue = async (queue) => {
+        try {
+            await AsyncStorage.setItem('@queue', JSON.stringify(queue))
+        } catch (e) {
+            // saving error
+        }
+    }
+
     return (
         <View style={styles.container}>
             <View
@@ -145,7 +160,7 @@ export default function Login({ navigation }) {
                 </View>
                 <TouchableOpacity
                     onPress={login}
-                    //onPress={() => navigate("UserHome")}
+                //onPress={() => navigate("UserHome")}
                 >
                     <View
                         style={{
