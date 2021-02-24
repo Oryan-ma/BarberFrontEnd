@@ -26,7 +26,6 @@ import { SCLAlert, SCLAlertButton } from "react-native-scl-alert";
 import UserAppointments from "./UserAppointments";
 
 export default class UserHome extends Component<{}> {
-
     static navigationOptions = {
         title: "First Screen",
     };
@@ -34,12 +33,9 @@ export default class UserHome extends Component<{}> {
     constructor(props) {
         super(props);
 
-        this.state = {
-
-        };
+        this.state = {};
         //alert(this.state.prevScreentor[1].Barber_Email)
     }
-
 
     render() {
         const { navigation } = this.props;
@@ -49,8 +45,8 @@ export default class UserHome extends Component<{}> {
                 <View>
                     <Text
                         onPress={() =>
-                            navigation.navigate("UserApp")
-                        } /* ################################# */
+                            navigation.navigate("UserApp")   /* ################################# Show User Apointment */
+                        } 
                         style={{
                             alignSelf: "center",
                             color: "#00716F",
@@ -63,7 +59,7 @@ export default class UserHome extends Component<{}> {
 
                 <View>
                     <Text
-                        onPress={() => navigation.navigate("MainPage")}
+                        onPress={() => navigation.navigate("MainPage")}  /* #################################  User New Apointment */
                         style={{
                             alignSelf: "center",
                             color: "#00716F",

@@ -37,12 +37,13 @@ getServices = (data)=>{
 
     render() {
         return (
-            
+           
             <View style={{flex: 1, marginTop:100}}>
     <ProgressSteps>
         <ProgressStep label="First Step">
             <View style={{ alignItems: 'center' }}>
                 <Text>Services </Text>
+                <CCservices/>
             </View>
     <View style={{
         flex: 1,
@@ -51,7 +52,7 @@ getServices = (data)=>{
         alignItems: 'stretch',
         marginTop:20,
       }}>
-        <CCservices sendServices={this.getServices}/>
+       
       </View>
         </ProgressStep>
         <ProgressStep label="Second Step">
@@ -79,11 +80,3 @@ getServices = (data)=>{
         );
     }
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})

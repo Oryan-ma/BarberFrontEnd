@@ -3,22 +3,31 @@ import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity }
 
 const DATA = [
   {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-    title: "First Item",
-  },
-  {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-    title: "Second Item",
-  },
-  {
-    id: "58694a0f-3da1-471f-bd96-145571e29d72",
-    title: "Third Item",
-  },
+        id: 1,
+        Barber_Id: "avi@gmail.com",
+        Service_Name: "Men Haircut",
+        Service_Price: 50,
+        
+    },
+    {
+        id: 2,
+        Barber_Id: "avi@gmail.com",
+        Service_Name: "Child Haircut",
+        Service_Price: 30,
+        
+    },
+    {
+        id: 3,
+        Barber_Id: "yosi@gmail.com",
+        Service_Name: "Men Haircut",
+        Service_Price: 50,
+        
+    },
 ];
 
 const Item = ({ item, onPress, style }) => (
-  <TouchableOpacity onPress={onPress} style={[styles.item, style]}>
-    <Text style={styles.title}>{item.title}</Text>
+  <TouchableOpacity onPress={onPress} style={[styles.appButtonContainer, style]}>
+    <Text style={styles.appButtonText}>{item.Service_Name}</Text>
   </TouchableOpacity>
 );
 
@@ -62,6 +71,25 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 32,
   },
+
+  appButtonContainer: {
+    elevation: 8,
+    backgroundColor: "#009688",
+    borderRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 16,
+  },
+  appButtonText: {
+    fontSize: 30,
+    color: "#fff",
+    fontWeight: "bold",
+    alignSelf: "center",
+    textTransform: "uppercase"
+  }
 });
+
 
 export default App;

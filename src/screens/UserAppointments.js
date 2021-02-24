@@ -42,6 +42,7 @@ const App = () => {
         // error reading value
       }
       for (let i = 0; i < queue.length; i++) {
+          console.log("Keynan",queue[i])
         if (queue[i].Customer_Email === user.Email) {
           userQueue.push(queue[i]);
         }

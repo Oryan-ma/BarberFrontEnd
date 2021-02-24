@@ -1,46 +1,83 @@
 export const Services = [
     {
-        ServiceId: 1,
-        ServiceName: "Men Haircut",
-        ServiceTime: 30,
-        ServicePrice: 30,
-        ServiceImg:
-            "https://img.mensxp.com/media/content/2020/Mar/Hottest-Haircuts-For-Men-In-20201_5e6f2fcdada33.jpeg",
+        id: 1,
+        Barber_Id: "avi@gmail.com",
+        Service_Name: "Men Haircut",
+        Service_Price: 50,
+        
     },
     {
-        ServiceId: 2,
-        ServiceName: "Women Haircut",
-        ServiceTime: 60,
-        ServicePrice: 100,
-        ServiceImg:
-            "https://pophaircuts.com/images/2018/10/cute-short-bob-haircut-for-female-new-haircut-ideas-for-short-hair-1.jpg",
+        id: 2,
+        Barber_Id: "avi@gmail.com",
+        Service_Name: "Child Haircut",
+        Service_Price: 30,
+        
     },
     {
-        ServiceId: 3,
-        ServiceName: "Pen woman",
-        ServiceTime: 35,
-        ServicePrice: 100,
-        ServiceImg:
-            "https://images1.ynet.co.il/PicServer5/2018/06/21/8608697/1__shutterstock_253809937_6.jpg",
+        id: 3,
+        Barber_Id: "yosi@gmail.com",
+        Service_Name: "Men Haircut",
+        Service_Price: 50,
+        
     },
 ];
 
-export const Employees = [
+export const Customer = [
     {
-        EmployeeId: 1,
-        EmployeeName: "Keynan",
+        id: 1,
+        Name: "Keynan",
+        Last_Name: "Peretz",
+        Customer_Gender: "m",
+        Phone: "0547998333",
+        Password:1234,
+        Email:"keynan@gmail.com",
+    },
+     {
+         id: 2,
+        Name: "niv",
+        Last_Name: "Peretz",
 
-        EmployeeLastName: "Peretz",
-        ServicesListID: [1, 2],
-        EmployeeImg:
-            "https://thedcpost.com/wp-content/uploads/2019/10/andi-whiskey-yjvpwnfDpHY-unsplash.jpg",
+        Customer_Gender: "m",
+        Phone: "0547348333",
+        Password:1234,
+        Email:"niv@gmail.com",
+    },
+];
+export const Barber = [
+    {
+        id: 1,
+        Name: "avi barber",
+        Last_Name: "Peretz",
+
+        Gender: "m",
+        Phone: "0547998333",
+        Password:1234,
+        Email:"avi@gmail.com",
+    },
+     {
+         id: 2,
+        Name: "yosi barber",
+        Last_Name: "Peretz",
+
+        Gender: "m",
+        Phone: "0547348333",
+        Password:1234,
+        Email:"yosi@gmail.com",
+    },
+];
+export const Appointment = [
+    {
+        id: 1,
+        Barber_Email: "avi@gmail.com",
+        Customer_Email: "niv@gmail.com",
+
+        time: "2021-12-16 08:35:00.000",
     },
     {
-        EmployeeId: 2,
-        EmployeeName: "Oryan",
-        EmployeeLastName: "Maman",
-        ServicesListID: [1],
-        EmployeeImg:
-            "https://images.squarespace-cdn.com/content/v1/5cd9d27f840b16669a850ca3/1601511724701-XUEOOQ86TOOALKW820XT/ke17ZwdGBToddI8pDm48kPLq0fQhj_hv3yKmdQF_15kUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcgdcNXLRxls76ofa7F6ClnnWs73rCTbzKGb8ByhQJiktLyP20T-cuLvEPm463CRhd/image-asset.jpeg",
+        id: 2,
+        Barber_Email: "yosi@gmail.com",
+        Customer_Email: "keynan@gmail.com",
+
+        time: "2015-03-25 12:00:00.000",
     },
 ];
