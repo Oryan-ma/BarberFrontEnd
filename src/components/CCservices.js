@@ -19,7 +19,7 @@ const DATA = [
     {
         id: 3,
         Barber_Id: "yosi@gmail.com",
-        Service_Name: "Men Haircut",
+        Service_Name: "Womem Haircut",
         Service_Price: 50,
         
     },
