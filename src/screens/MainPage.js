@@ -8,9 +8,9 @@ import {Services,Employees} from '../data/Data';
 import { Avatar, Button, Card, Title, Paragraph,Checkbox } from 'react-native-paper';
 //import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import LottieView from "lottie-react-native";
-import CCservices from './CCservices';
-import EmployeesList from './Employee';
-import Cal from "./calender";
+import CCservices from "../components/CCservices";
+import EmployeesList from "../components/Employee";
+import Cal from "../components/calender";
 import {
   SCLAlert,
   SCLAlertButton
@@ -28,7 +28,7 @@ var serviceId = null;
 
 getServices = (data)=>{
     this.serviceId=data;
-    alert(this.serviceId);
+    //alert(this.serviceId);
 
 }
   componentDidMount(){ 
@@ -37,12 +37,13 @@ getServices = (data)=>{
 
     render() {
         return (
-            
+           
             <View style={{flex: 1, marginTop:100}}>
     <ProgressSteps>
         <ProgressStep label="First Step">
             <View style={{ alignItems: 'center' }}>
                 <Text>Services </Text>
+                <CCservices/>
             </View>
     <View style={{
         flex: 1,
@@ -51,7 +52,7 @@ getServices = (data)=>{
         alignItems: 'stretch',
         marginTop:20,
       }}>
-        <CCservices sendServices={this.getServices}/>
+       
       </View>
         </ProgressStep>
         <ProgressStep label="Second Step">
@@ -79,11 +80,3 @@ getServices = (data)=>{
         );
     }
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})
