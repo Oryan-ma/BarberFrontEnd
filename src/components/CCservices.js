@@ -3,26 +3,47 @@ import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity }
 
 const DATA = [
   {
-        id: 1,
-        Barber_Id: "avi@gmail.com",
-        Service_Name: "Men Haircut",
-        Service_Price: 50,
-        
-    },
-    {
-        id: 2,
-        Barber_Id: "avi@gmail.com",
-        Service_Name: "Child Haircut",
-        Service_Price: 30,
-        
-    },
-    {
-        id: 3,
-        Barber_Id: "yosi@gmail.com",
-        Service_Name: "Womem Haircut",
-        Service_Price: 50,
-        
-    },
+    id: 1,
+    Barber_Id: "avi@gmail.com",
+    Service_Name: "Apparel",
+    Service_Price: 50,
+
+  },
+  {
+    id: 2,
+    Barber_Id: "avi@gmail.com",
+    Service_Name: "Cars",
+    Service_Price: 30,
+
+  },
+  {
+    id: 3,
+    Barber_Id: "yosi@gmail.com",
+    Service_Name: "Fast Food",
+    Service_Price: 50,
+
+  },
+  {
+    id: 4,
+    Barber_Id: "yosi@gmail.com",
+    Service_Name: "Personal Care",
+    Service_Price: 50,
+
+  },
+  {
+    id: 5,
+    Barber_Id: "yosi@gmail.com",
+    Service_Name: "Retail",
+    Service_Price: 50,
+
+  },
+  {
+    id: 6,
+    Barber_Id: "yosi@gmail.com",
+    Service_Name: "Technology",
+    Service_Price: 50,
+
+  }
 ];
 
 const Item = ({ item, onPress, style }) => (

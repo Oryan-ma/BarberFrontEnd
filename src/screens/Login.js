@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Text, View, Image, TextInput, StyleSheet ,ImageBackground} from "react-native";
+import { Text, View, Image, TextInput, StyleSheet, ImageBackground } from "react-native";
 import Icon from "@expo/vector-icons/AntDesign";
 import { TouchableOpacity } from "react-native";
 import { useState } from "react";
@@ -8,7 +8,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 export default function Login({ navigation }) {
     const [Email, setEmail] = useState("");
     const [Password, setPassword] = useState("");
-  
+
 
     let User = {};
 
@@ -94,131 +94,131 @@ export default function Login({ navigation }) {
     console.log();
     return (
         <View style={styles.container}>
-        <ImageBackground source={require("../images/mymind-XUlsF9LYeVk-unsplash.jpg")} style={styles.image}>
-            <View
-                style={{
-                    paddingVertical: 200,
-                }}
-            >
-                <Text
-                    style={{
-                        fontSize: 80,
-
-                        alignSelf: "center",
-                    }}
-                >
-                    Barber X
-                </Text>
-
-                <Text
-                    style={{
-                         fontSize: 30,
-                        marginHorizontal: 55,
-                        textAlign: "center",
-                        marginTop: 5,
-                        opacity: 0.4,
-                    }}
-                >
-                    Profesional Hair Salon
-                </Text>
-
+            <ImageBackground source={require("../images/mymind-XUlsF9LYeVk-unsplash.jpg")} style={styles.image}>
                 <View
                     style={{
-                        flexDirection: "row",
-                        alignItems: "center",
-                        marginHorizontal: 55,
-                        borderWidth: 2,
-                        marginTop: 50,
-                        paddingHorizontal: 10,
-                        borderColor: "#00716F",
-                        borderRadius: 23,
-                        paddingVertical: 2,
-                        height: "10%",
+                        paddingVertical: 200,
                     }}
                 >
-                    <Icon name="mail" color="#00716F" size={26} />
-                    <TextInput
-                        style = {{ flex: 1 }} 
-                        placeholder="Username"
-                        onChangeText={(v) => setEmail(v)}
-                        text="Oryan"
-                    />
-                </View>
-                <View
-                    style={{
-                        flexDirection: "row",
-                        alignItems: "center",
-                        marginHorizontal: 55,
-                        borderWidth: 2,
-                        marginTop: 15,
-                        paddingHorizontal: 10,
-                        borderColor: "#00716F",
-                        borderRadius: 23,
-                        paddingVertical: 2,
-                        height: "10%",
-                    }}
-                >
-                    <Icon name="password" color="#00716F" size={26} />
-                    <TextInput
-                        style={{ paddingHorizontal: 10 }}
-                        placeholder="Password"
-                        secureTextEntry
-                        onChangeText={(v) => setPassword(v)}
-                    />
-                </View>
-                <TouchableOpacity
-                    onPress={
-                        login
-                    } /* ################################# Login Method */
-                    //onPress={() => navigate("UserHome")}
-                >
-                    <View
+                    <Text
                         style={{
-                            marginHorizontal: 55,
-                            alignItems: "center",
-                            justifyContent: "center",
-                            marginTop: 30,
-                            backgroundColor: "#00716F",
-                            paddingVertical: 10,
-                            borderRadius: 23,
-                            height: "30%",
+                            fontSize: 80,
+
+                            alignSelf: "center",
                         }}
                     >
-                        <Text
-                            style={{
-                                alignSelf: "center",
-                                //color: '#00716F',
+                        Brands Battle
+                </Text>
 
-                                //paddingVertical: 30,
+                    <Text
+                        style={{
+                            fontSize: 30,
+                            marginHorizontal: 55,
+                            textAlign: "center",
+                            marginTop: 5,
+                            opacity: 0.4,
+                        }}
+                    >
+                        Fun Game and Marketing Tool
+                </Text>
+
+                    <View
+                        style={{
+                            flexDirection: "row",
+                            alignItems: "center",
+                            marginHorizontal: 55,
+                            borderWidth: 2,
+                            marginTop: 50,
+                            paddingHorizontal: 10,
+                            borderColor: "#00716F",
+                            borderRadius: 23,
+                            paddingVertical: 2,
+                            height: "10%",
+                        }}
+                    >
+                        <Icon name="mail" color="#00716F" size={26} />
+                        <TextInput
+                            style={{ flex: 1 }}
+                            placeholder="Username"
+                            onChangeText={(v) => setEmail(v)}
+                            text="Oryan"
+                        />
+                    </View>
+                    <View
+                        style={{
+                            flexDirection: "row",
+                            alignItems: "center",
+                            marginHorizontal: 55,
+                            borderWidth: 2,
+                            marginTop: 15,
+                            paddingHorizontal: 10,
+                            borderColor: "#00716F",
+                            borderRadius: 23,
+                            paddingVertical: 2,
+                            height: "10%",
+                        }}
+                    >
+                        <Icon name="password" color="#00716F" size={26} />
+                        <TextInput
+                            style={{ paddingHorizontal: 10 }}
+                            placeholder="Password"
+                            secureTextEntry
+                            onChangeText={(v) => setPassword(v)}
+                        />
+                    </View>
+                    <TouchableOpacity
+                        onPress={
+                            login
+                        } /* ################################# Login Method */
+                    //onPress={() => navigate("UserHome")}
+                    >
+                        <View
+                            style={{
+                                marginHorizontal: 55,
+                                alignItems: "center",
+                                justifyContent: "center",
+                                marginTop: 30,
+                                backgroundColor: "#00716F",
+                                paddingVertical: 10,
+                                borderRadius: 23,
+                                height: "30%",
                             }}
                         >
-                            Login
-                        </Text>
-                    </View>
-                </TouchableOpacity>
-                <Text
-                    onPress={() =>
-                        navigation.navigate("Register")
-                    } /* ################################# Go to register screen */
-                    style={{
-                        alignSelf: "center",
-                        color: "#00716F",
+                            <Text
+                                style={{
+                                    alignSelf: "center",
+                                    //color: '#00716F',
 
-                        paddingVertical: 70,
-                    }}
-                >
-                    New User
+                                    //paddingVertical: 30,
+                                }}
+                            >
+                                Login
+                        </Text>
+                        </View>
+                    </TouchableOpacity>
+                    <Text
+                        onPress={() =>
+                            navigation.navigate("Register")
+                        } /* ################################# Go to register screen */
+                        style={{
+                            alignSelf: "center",
+                            color: "#00716F",
+
+                            paddingVertical: 70,
+                        }}
+                    >
+                        New User
                 </Text>
-            </View>
-              </ImageBackground>
+                </View>
+            </ImageBackground>
         </View>
     );
 }
 const styles = StyleSheet.create({
     container: {
-    flex: 1,
-    flexDirection: "column"
-  },
+        flex: 1,
+        flexDirection: "column"
+    },
     top: {
         flex: 0.3,
         backgroundColor: "grey",
@@ -238,16 +238,16 @@ const styles = StyleSheet.create({
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
     },
- image: {
-    flex: 1,
-    resizeMode: "cover",
-    justifyContent: "center"
-  },
-  text: {
-    color: "white",
-    fontSize: 42,
-    fontWeight: "bold",
-    textAlign: "center",
-    backgroundColor: "#000000a0"
-  }
+    image: {
+        flex: 1,
+        resizeMode: "cover",
+        justifyContent: "center"
+    },
+    text: {
+        color: "white",
+        fontSize: 42,
+        fontWeight: "bold",
+        textAlign: "center",
+        backgroundColor: "#000000a0"
+    }
 });

@@ -2,26 +2,82 @@ import React, { useState } from "react";
 import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity } from "react-native";
 
 const DATA = [
- {
-        id: 1,
-        Name: "avi barber",
-        Last_Name: "Peretz",
+  {
+    id: 1,
+    Name: "Nike",
+    Categoty: "Apparel",
+  },
+  {
+    id: 2,
+    Name: "Zara",
+    Categoty: "Apparel",
+  },
+  {
+    id: 3,
+    Name: "Louis Vuitton",
+    Categoty: "Apparel",
+  },
+  {
+    id: 4,
+    Name: "Hermes",
+    Categoty: "Apparel",
+  },
+  {
+    id: 5,
+    Name: "Gucci",
+    Categoty: "Apparel",
+  },
+  {
+    id: 6,
+    Name: "Chanel",
+    Categoty: "Apparel",
+  },
+  {
+    id: 7,
+    Name: "Prada",
+    Categoty: "Apparel",
+  },
+  {
+    id: 8,
+    Name: "Uniqlo",
+    Categoty: "Apparel",
+  },
+  {
+    id: 9,
+    Name: "Burberry",
+    Categoty: "Apparel",
+  },
+  {
+    id: 10,
+    Name: "Tom Ford",
+    Categoty: "Apparel",
+  },
+  {
+    id: 11,
+    Name: "Ralph Lauren",
+    Categoty: "Apparel",
+  },
+  {
+    id: 12,
+    Name: "Next",
+    Categoty: "Apparel",
+  },
+  {
+    id: 13,
+    Name: "ASOS",
+    Categoty: "Apparel",
+  },
+  {
+    id: 14,
+    Name: "Moncler",
+    Categoty: "Apparel",
+  },
+  {
+    id: 15,
+    Name: "Adidas",
+    Categoty: "Apparel",
+  },
 
-        Gender: "m",
-        Phone: "0547998333",
-        Password:1234,
-        Email:"avi@gmail.com",
-    },
-     {
-         id: 2,
-        Name: "yosi barber",
-        Last_Name: "Peretz",
-
-        Gender: "m",
-        Phone: "0547348333",
-        Password:1234,
-        Email:"yosi@gmail.com",
-    },
 ];
 
 const Item = ({ item, onPress, style }) => (

@@ -51,18 +51,18 @@ export default function Register(props) {
     }
 
     return (
-        <View style={{ backgroundColor: "#FFF", height: "100%" }} >
+        <View style={{ backgroundColor: "#FFF", height: "90%" }} >
             <View>
 
                 <Image
-                    source={require("../images/image.jpg")}
-                    style={{ width: "100%", height: "43%" }}
+                    source={require("../images/logo.png")}
+                    style={{ width: "100%", height: "25%", marginTop: 100 }}
                 />
                 <Text
                     // eslint-disable-next-line react-native/no-inline-styles
                     style={{
                         fontSize: 25,
-
+                        marginTop: 50,
                         alignSelf: "center",
                     }}
                 >
@@ -91,7 +91,7 @@ export default function Register(props) {
                         alignItems: "center",
                         marginHorizontal: 55,
                         borderWidth: 2,
-                        marginTop: 50,
+                        //marginTop: 50,
                         paddingHorizontal: 10,
                         borderColor: "#00716F",
                         borderRadius: 23,
