@@ -240,14 +240,7 @@ export default function Register(props) {
                     borderRadius: 23,
                 }}
             >
-                <Text
-                    onPress={() => navigate("RegisterBarber")}
-                    style={{
-                        color: "white",
-                    }}
-                >
-                    Register for barbaer
-                    </Text>
+
             </View>
         </View>
     );

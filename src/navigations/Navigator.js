@@ -24,7 +24,7 @@ const AppNavigator = createStackNavigator(
         MainPage: { screen: MainPage },
         RegisterBarber: { screen: RegisterBarber },
         UserHome: { screen: UserHome },
-        UserApp: { screen: UserApp },
+
 
 
     },

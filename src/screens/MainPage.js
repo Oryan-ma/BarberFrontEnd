@@ -3,7 +3,7 @@ import React from 'react';
 import {
   Text, View, Image, TextInput, FlatList, TouchableOpacity,
   StyleSheet,
-  ImageBackground
+  ImageBackground, SafeAreaView
 } from 'react-native';
 import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
 import Icon from '@expo/vector-icons/AntDesign';
@@ -21,6 +21,9 @@ import {
   SCLAlertButton
 } from 'react-native-scl-alert';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+import ImagedCardView from "react-native-imaged-card-view";
+//import ImagedCarouselCard from "react-native-imaged-carousel-card";
+import ImagedCarouselCard from "../lib/src/ImagedCarouselCard";
 export default class MainPage extends React.Component {
 
   constructor(props) {
@@ -47,50 +50,49 @@ export default class MainPage extends React.Component {
 
       <View style={styles.container}>
         <ImageBackground source={require("../images/mymind-XUlsF9LYeVk-unsplash.jpg")} style={styles.image}>
-          <ProgressSteps>
-            <ProgressStep label="Select Category">
-              <View style={{ alignItems: 'center' }}>
-                <Text>Categorys </Text>
-                <BrandsCategory />
+
+
+          <SafeAreaView>
+            <View
+              style={{
+                top: 32,
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              <ImagedCarouselCard
+                height={200}
+                width={200}
+                shadowColor="#051934"
+                source={{
+                  uri:
+                    "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80"
+                }}
+              />
+              <View style={{ marginTop: 32 }}>
+                <ImagedCarouselCard />
               </View>
-              <View style={{
-                flex: 1,
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'stretch',
-                marginTop: 20,
-              }}>
 
-              </View>
-            </ProgressStep>
-
-            <ProgressStep label="Play">
-              <View style={{
-                flex: 1,
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'stretch',
-                marginTop: 20,
-              }}>
-                <CircularCard style={styles.card}
-                  title="Play"
-                  backgroundColor="#000000"
-                  source={require("../images/play.png")}
-
+              <View style={{ marginTop: 32 }}>
+                <ImagedCarouselCard
+                  onPress={() => this.props.navigation.navigate('Quiz')}
+                  height={200}
+                  width={200}
+                  shadowColor="#051934"
+                  source={{
+                    uri:
+                      "https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  }}
                   onPress={() => this.props.navigation.navigate('Quiz')}
 
-
-
-
                 />
-
-
               </View>
-
-            </ProgressStep>
-          </ProgressSteps>
+            </View>
+          </SafeAreaView>
         </ImageBackground>
       </View>
+
+
     );
   }
 }

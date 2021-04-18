@@ -7,7 +7,7 @@ const MainStack = createStackNavigator({
   QuizIndex: {
     screen: QuizIndex,
     navigationOptions: {
-      headerTitle: "Quizzes"
+      headerTitle: "CHOOSE CATEGORY"
     }
   },
   Quiz: {

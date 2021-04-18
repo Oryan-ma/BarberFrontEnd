@@ -6,7 +6,7 @@ import { Alert } from "../components/Alert";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#36B1F0",
+    backgroundColor: "#6F96B8",
     flex: 1,
     paddingHorizontal: 20
   },
